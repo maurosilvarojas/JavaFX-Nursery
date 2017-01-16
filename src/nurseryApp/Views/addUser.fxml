@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="457.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nurseryApp.Controller.AddUserController">
+   <children>
+      <BorderPane layoutX="-3.0" prefHeight="400.0" prefWidth="600.0">
+         <top>
+            <Label text="PARENTS REGISTRATION" textFill="#6f6d6d" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets top="8.0" />
+               </BorderPane.margin>
+            </Label>
+         </top>
+         <center>
+            <VBox prefHeight="341.0" prefWidth="631.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXTextField fx:id="nameField" labelFloat="true" promptText="NAME">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="surnameField" labelFloat="true" layoutX="20.0" layoutY="20.0" promptText="SURNAME">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="addressField" labelFloat="true" layoutX="10.0" layoutY="51.0" promptText="ADDRESS">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="postcodeField" labelFloat="true" layoutX="10.0" layoutY="82.0" promptText="POST CODE">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="emailField" labelFloat="true" layoutX="10.0" layoutY="113.0" promptText="E-MAIL">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="mobileField" labelFloat="true" layoutX="10.0" layoutY="113.0" promptText="MOBILE">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <HBox>
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="89.0" text="DATE OF BIRTH" textFill="#a1a1a1">
+                           <HBox.margin>
+                              <Insets left="30.0" right="40.0" />
+                           </HBox.margin>
+                        </Label>
+                        <DatePicker fx:id="parentsDoB" prefHeight="25.0" prefWidth="204.0" promptText="SELECT" />
+                        <JFXCheckBox fx:id="registrationFee" checkedColor="#ff9d00" onAction="#registrationFeeEvent" prefHeight="17.0" prefWidth="138.0" text="REGISTRATION FEE">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </JFXCheckBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="61.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="addUser" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" disable="true" onAction="#addUserEvent" prefHeight="51.0" prefWidth="90.0" styleClass="nursseryButton" stylesheets="@../Resources/login.css" text="ACCEPT">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="cancelRegister" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="20.0" layoutY="20.0" onAction="#cancelRegisterEvent" prefHeight="51.0" prefWidth="90.0" styleClass="nursseryButton" stylesheets="@../Resources/login.css" text="CANCEL">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</Pane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="266.0" prefWidth="418.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nurseryApp.Controller.SessionController">
+   <children>
+      <HBox layoutX="36.0" layoutY="31.0" prefHeight="192.0" prefWidth="324.0">
+         <children>
+            <VBox layoutX="140.0" layoutY="31.0">
+               <children>
+                  <TextField fx:id="childIDFinder" onAction="#childIDFinderEvent" promptText="CHILD ID" />
+                  <JFXButton fx:id="childIDFinderButton" alignment="CENTER_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" onAction="#childIDFinderButtonEvent" styleClass="nursseryButton" stylesheets="@../Resources/login.css" text="FIND">
+                     <VBox.margin>
+                        <Insets left="100.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <Label layoutX="140.0" layoutY="31.0" text="Book Session" />
+                  <Label layoutX="168.0" layoutY="90.0" text="From:" />
+                  <DatePicker fx:id="fromDate" layoutX="168.0" layoutY="119.0" />
+                  <Label layoutX="168.0" layoutY="152.0" text="To:" />
+                  <DatePicker fx:id="toDate" layoutX="168.0" layoutY="175.0" />
+               </children>
+            </VBox>
+            <VBox layoutX="386.0" layoutY="119.0" prefHeight="192.0" prefWidth="163.0">
+               <children>
+                  <Pane prefHeight="120.0" prefWidth="151.0">
+                     <children>
+                        <JFXTextField fx:id="foundTextField" labelFloat="true" layoutX="-1.0" layoutY="-1.0" promptText="NAME" />
+                        <JFXTextField fx:id="foundTextField2" labelFloat="true" layoutX="-1.0" layoutY="55.0" promptText="NAME" />
+                     </children></Pane>
+                  <ChoiceBox fx:id="timeRange" layoutX="386.0" layoutY="119.0" prefHeight="38.0" prefWidth="141.0" />
+                  <HBox>
+                     <children>
+                        <JFXButton fx:id="bookSession" buttonType="RAISED" layoutX="435.0" layoutY="266.0" onAction="#bookSessionEvent" styleClass="nursseryButton" stylesheets="@../Resources/login.css" text="ACCEPT">
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="exitbookSession" buttonType="RAISED" layoutX="30.0" layoutY="175.0" onAction="#exitbookSessionEvent" styleClass="nursseryButton" stylesheets="@../Resources/login.css" text="CLOSE">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</Pane>

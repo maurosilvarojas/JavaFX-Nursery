@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="602.0" style="-fx-background-color: #CFC6CB;" xmlns="http://javafx.com/javafx/8.0.101" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nurseryApp.Controller.AddChildrenController">
+   <children>
+      <BorderPane layoutX="-3.0" prefHeight="400.0" prefWidth="600.0">
+         <center>
+            <VBox prefHeight="341.0" prefWidth="631.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXTextField fx:id="childNameField" labelFloat="true" promptText="NAME">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="childSurnameField" labelFloat="true" layoutX="20.0" layoutY="20.0" promptText="SURNAME">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="childAllergies" labelFloat="true" layoutX="10.0" layoutY="51.0" promptText="ALLERGIES">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="childCategory" labelFloat="true" layoutX="10.0" layoutY="82.0" promptText="CATEGORY">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="childRH" labelFloat="true" layoutX="10.0" layoutY="113.0" promptText="RH:">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="childDisabilities" labelFloat="true" layoutX="10.0" layoutY="113.0" promptText="DISABILITIES">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <HBox>
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="89.0" text="DATE OF BIRTH" textFill="#a1a1a1">
+                           <HBox.margin>
+                              <Insets left="30.0" right="40.0" />
+                           </HBox.margin>
+                        </Label>
+                        <DatePicker fx:id="childDoB" prefHeight="25.0" prefWidth="353.0" promptText="SELECT" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="15.0" />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="61.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="addChildButton" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#addChildButtonEvent" prefHeight="51.0" prefWidth="90.0" styleClass="nursseryButton" stylesheets="@../Resources/login.css" text="ACCEPT">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="cancelRegister" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="20.0" layoutY="20.0" onAction="#cancelRegisterEvent" prefHeight="51.0" prefWidth="90.0" styleClass="nursseryButton" stylesheets="@../Resources/login.css" text="CANCEL">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </bottom>
+         <top>
+            <VBox prefHeight="158.0" prefWidth="608.0" style="-fx-background-color: #CFC6CB;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="140.0" text="FIND PARENT">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <DatePicker fx:id="parentDoB" prefHeight="29.0" prefWidth="174.0" promptText="DATE OF BIRTH">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                        <JFXTextField fx:id="parentSurname" labelFloat="true" promptText="SURNAME" />
+                        <JFXButton fx:id="searchParent" buttonType="RAISED" onAction="#searchParentEvent" ripplerFill="#e20e0e" styleClass="nursseryButton" stylesheets="@../Resources/login.css" text="SEARCH">
+                           <HBox.margin>
+                              <Insets top="3.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <JFXTextField fx:id="foundParentName" editable="false" labelFloat="true" promptText="NAME">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="foundParentSurname" promptText="SURNAME">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="20.0" />
+               </BorderPane.margin>
+            </VBox>
+         </top>
+      </BorderPane>
+   </children>
+</Pane>

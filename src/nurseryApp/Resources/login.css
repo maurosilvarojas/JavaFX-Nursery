@@ -1,0 +1,16 @@
+#paneINI{
+    /*-fx-background-image: url('background.jpg');*/
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+#passwordField{
+
+}
+.nursseryButton:hover{
+    -fx-background-color: #B0D3F0;
+}
+
+.nursseryButton{
+    -fx-background-color: #ff9d00;
+}

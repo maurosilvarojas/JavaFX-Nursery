@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import jfxtras.scene.layout.*?>
+<?import javafx.scene.effect.*?>
+<?import jfxtras.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="homePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nurseryApp.Controller.HomeController">
+   <children>
+      <BorderPane layoutX="-4.0" layoutY="-2.0" prefHeight="600.0" prefWidth="807.0">
+         <top>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="100.0" prefWidth="32.0" />
+                  <Pane layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="436.0">
+                     <children>
+                        <ImageView fitHeight="68.0" fitWidth="373.0" layoutX="21.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Resources/nurseryHome.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets top="50.0" />
+                     </padding>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="176.0" />
+                  <VBox prefHeight="100.0" prefWidth="167.0">
+                     <children>
+                        <Pane prefHeight="26.0" prefWidth="114.0" />
+                        <JFXButton fx:id="exitButton" alignment="CENTER" buttonType="RAISED" contentDisplay="RIGHT" onAction="#exitButtonEvent" prefHeight="53.0" prefWidth="124.0" ripplerFill="#da0d0d" styleClass="nursseryButton" stylesheets="@../Resources/login.css" text="EXIT">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Resources/exitButton.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </top>
+         <bottom>
+            <HBox prefHeight="27.0" prefWidth="807.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <left>
+            <VBox prefHeight="400.0" prefWidth="126.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <JFXButton fx:id="searchButton" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#searchEvent" prefHeight="67.0" prefWidth="105.0" ripplerFill="#007eb2" styleClass="nursseryButton" stylesheets="@../Resources/login.css" text="Search">
+                           <graphic>
+                              <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Resources/search.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXButton>
+                        <Pane prefHeight="11.0" prefWidth="126.0" />
+                        <JFXButton fx:id="sessionButton" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="21.0" layoutY="10.0" onAction="#sessionEvent" prefHeight="67.0" prefWidth="105.0" ripplerFill="#007eb2" styleClass="nursseryButton" stylesheets="@../Resources/login.css" text="Session">
+                           <graphic>
+                              <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Resources/session.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXButton>
+                        <Pane layoutX="10.0" layoutY="86.0" prefHeight="11.0" prefWidth="126.0" />
+                        <JFXButton fx:id="sheduleButton" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="21.0" layoutY="97.0" onAction="#sheduleEvent" prefHeight="67.0" prefWidth="105.0" ripplerFill="#007eb2" styleClass="nursseryButton" stylesheets="@../Resources/login.css" text="Waiting List">
+                           <graphic>
+                              <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Resources/iconWaiting.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXButton>
+                        <Pane layoutX="10.0" layoutY="172.0" prefHeight="11.0" prefWidth="126.0" />
+                        <JFXButton fx:id="registerButton" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="21.0" layoutY="173.0" onAction="#addUser" prefHeight="67.0" prefWidth="105.0" ripplerFill="#007eb2" styleClass="nursseryButton" stylesheets="@../Resources/login.css" text="Parent Register">
+                           <graphic>
+                              <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Resources/family.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXButton>
+                        <Pane layoutX="10.0" layoutY="252.0" prefHeight="11.0" prefWidth="126.0" />
+                        <JFXButton fx:id="invoiceButton" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="21.0" layoutY="249.0" onAction="#invoiceButtonEvent" prefHeight="67.0" prefWidth="105.0" ripplerFill="#007eb2" styleClass="nursseryButton" stylesheets="@../Resources/login.css" text="Invoice">
+                           <graphic>
+                              <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Resources/bills.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXButton>
+                        <Pane layoutX="10.0" layoutY="329.0" prefHeight="11.0" prefWidth="126.0" />
+                        <JFXButton fx:id="registerChild" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="21.0" layoutY="271.0" onAction="#registerChildEvent" prefHeight="67.0" prefWidth="105.0" ripplerFill="#007eb2" styleClass="nursseryButton" stylesheets="@../Resources/login.css" text="Child Register ">
+                           <graphic>
+                              <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Resources/buggy.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <TabPane prefHeight="452.0" prefWidth="681.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+              <tabs>
+                <Tab text="Parents">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox layoutX="2.0" layoutY="-1.0">
+                                 <children>
+                                    <TableView fx:id="parentsTable" layoutX="2.0" layoutY="-1.0" prefHeight="269.0" prefWidth="679.0">
+                                      <columns>
+                                         <TableColumn fx:id="parentID" prefWidth="75.0" text="ID" />
+                                        <TableColumn fx:id="name" prefWidth="75.0" text="NAME" />
+                                        <TableColumn fx:id="surname" prefWidth="75.0" text="SURNAME" />
+                                        <TableColumn fx:id="DoB" prefWidth="75.0" text="DoB" />
+                                          <TableColumn fx:id="email" prefWidth="75.0" text="EMAIL" />
+                                          <TableColumn fx:id="mobile" prefWidth="75.0" text="MOBILE" />
+                                          <TableColumn fx:id="address" prefWidth="75.0" text="ADDRESS" />
+                                          <TableColumn fx:id="postcode" prefWidth="75.0" text="POSTCODE" />
+      
+                                      </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                    <HBox>
+                                       <children>
+                                          <Pane prefHeight="25.0" prefWidth="460.0" />
+                                          <JFXButton fx:id="refreshParents" alignment="CENTER_RIGHT" buttonType="RAISED" contentDisplay="CENTER" layoutX="290.0" layoutY="325.0" onAction="#refreshParentEvent" ripplerFill="#0f5ddb" styleClass="nursseryButton" stylesheets="@../Resources/login.css" text="Refresh" textAlignment="RIGHT" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Children">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox layoutX="11.0" layoutY="10.0" prefHeight="320.0" prefWidth="569.0">
+                                 <children>
+                                    <TableView fx:id="childrenTable" prefHeight="294.0" prefWidth="569.0">
+                                      <columns>
+                                        <TableColumn fx:id="childID" prefWidth="75.0" text="ID" />
+                                        <TableColumn fx:id="childName" prefWidth="75.0" text="NAME" />
+                                          <TableColumn fx:id="childSurname" prefWidth="75.0" text="SURNAME" />
+                                          <TableColumn fx:id="childDoB" prefWidth="75.0" text="DoB" />
+                                          <TableColumn fx:id="childAllergy" prefWidth="75.0" text="ALLERGY" />
+                                          <TableColumn fx:id="parentIDChildTable" prefWidth="75.0" text="PARENT ID" />
+                                          <TableColumn fx:id="childCategory" prefWidth="75.0" text="CATEGORY" />
+                                      </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                    <HBox>
+                                       <children>
+                                          <Pane prefHeight="25.0" prefWidth="703.0" />
+                                          <JFXButton fx:id="refreshChildTable" alignment="TOP_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" onAction="#refreshChildTableEvent" prefHeight="25.0" prefWidth="268.0" styleClass="nursseryButton" stylesheets="@../Resources/login.css" text="Refresh" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab fx:id="staffTableView" text="Staff">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="staffTable" layoutX="7.0" prefHeight="361.0" prefWidth="649.0">
+                                <columns>
+                                  <TableColumn fx:id="staffID" prefWidth="75.0" text="ID" />
+                                  <TableColumn fx:id="staffNameTable" prefWidth="75.0" text="Name" />
+                                    <TableColumn fx:id="staffSurname" prefWidth="75.0" text="Surname" />
+                                    <TableColumn fx:id="staffAvailability" prefWidth="75.0" text="Abailability" />
+                                    <TableColumn fx:id="staffMobile" prefWidth="75.0" text="Mobile" />
+                                    <TableColumn fx:id="staffEmail" prefWidth="75.0" text="email" />
+                                </columns>
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                              </TableView>
+                              <JFXButton fx:id="refreshStaffTableButton" buttonType="RAISED" layoutX="597.0" layoutY="361.0" onAction="#refreshStaffTableButtonEvent" styleClass="nursseryButton" stylesheets="@../Resources/login.css" text="Refresh" />
+                           </children></AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Rates">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Today's Session">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView prefHeight="357.0" prefWidth="661.0">
+                                <columns>
+                                  <TableColumn fx:id="rangeTime" prefWidth="75.0" text="Range Time" />
+                                  <TableColumn fx:id="category" prefWidth="75.0" text="Category" />
+                                    <TableColumn fx:id="childIdColumn" prefWidth="75.0" text="id" />
+                                    <TableColumn fx:id="childName" prefWidth="75.0" text="Name" />
+                                    <TableColumn fx:id="Allergies" prefWidth="75.0" text="Allergy" />
+                                    <TableColumn fx:id="parentName" prefWidth="75.0" text="Parent Name" />
+                                    <TableColumn fx:id="parentSurname" prefWidth="75.0" text="Parent Name" />
+                                    <TableColumn fx:id="parentNumber" prefWidth="75.0" text="Contact" />
+                                    <TableColumn fx:id="staffName" prefWidth="75.0" text="Staff" />
+                                </columns>
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                              </TableView>
+                              <JFXButton buttonType="RAISED" layoutX="609.0" layoutY="357.0" styleClass="nursseryButton" stylesheets="@../Resources/login.css" text="Refresh" />
+                           </children></AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </center>
+      </BorderPane>
+   </children>
+</Pane>

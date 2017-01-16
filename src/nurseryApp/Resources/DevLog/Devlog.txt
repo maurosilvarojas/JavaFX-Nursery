@@ -1,0 +1,14 @@
+********************
+24/12/2016      Fix GUI- and external libraries
+26/12/2016
+1-/01/2017-1:06: RE make Parents class as adults ok
+                 re make add-children -add parent methods.
+                 Finish invoice.
+                 Generate todays list .
+12/01/2017: Problem retrieving staff tables on main screen.
+13/01/2017:
+
+*************** to-do**********************
+1. Status bar, push mental model of the interface
+2. CSS for notifications
+3. Todays date , time in top bar
