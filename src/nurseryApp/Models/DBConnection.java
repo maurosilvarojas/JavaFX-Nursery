@@ -13,10 +13,10 @@ import java.sql.PreparedStatement;
 
 public class DBConnection {
     public static  final String JDBC_driver = "com.mysql.jdbc.Driver";
-    public static  final String JDBC_url="jdbc:mysql://194.81.104.22:3306/db16442932" ;
-   // public static  final String JDBC_dbName="db16442932" ;
-    public static  final String JDBC_user = "s16442932";
-    public static  final String JDBC_password = "16442932";
+    public static  final String JDBC_url="jdbc:mysql://194.81.104.**:3306/db******" ;
+   // public static  final String JDBC_dbName=******
+    public static  final String JDBC_user = "s******";
+    public static  final String JDBC_password = "******";
 
 
     public static Connection getConnection (){
